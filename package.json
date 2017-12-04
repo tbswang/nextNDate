@@ -1,0 +1,32 @@
+{
+  "name": "nextdate",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "reporter": "npm run cover > log & node ./src/utilWriteToExcel.js",
+    "cover": "istanbul cover node_modules/mocha/bin/_mocha -- -t 100000 ./test/nextNDate.test.js"
+  },
+  "keywords": [
+    "testing",
+    "Mocha",
+    "istanbul"
+  ],
+  "author": "gt2017qd@163.com",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-core": "~6.2.1",
+    "babel-preset-es2015": "~6.1.18",
+    "chai": "~3.4.1",
+    "mocha": "^2.5.3",
+    "mocha-insights-reporter": "^1.0.28-beta.10",
+    "mocha-multi": "^0.11.1",
+    "mochawesome": "~1.2.1"
+  },
+  "dependencies": {
+    "node-fetch": "~1.3.3",
+    "node-xlsx": "^0.11.2",
+    "superagent": "~1.4.0",
+    "xlsx": "^0.11.11"
+  }
+}
